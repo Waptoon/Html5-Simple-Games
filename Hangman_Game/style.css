@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+#wordToGuess {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+#hangman {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  background-color: #fff;
+  border: 2px solid #000;
+  position: relative;
+}
+.body-part {
+  position: absolute;
+  background-color: #000;
+}
+.head {
+  top: 10px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+.body {
+  top: 60px;
+  left: 50%;
+  width: 5px;
+  height: 80px;
+  transform: translateX(-50%);
+}
+.left-arm {
+  top: 65px;
+  left: 20px;
+  width: 40px;
+  height: 5px;
+  transform-origin: bottom right;
+  transform: rotate(45deg);
+}
+.right-arm {
+  top: 65px;
+  right: 20px;
+  width: 40px;
+  height: 5px;
+  transform-origin: bottom left;
+  transform: rotate(-45deg);
+}
+.left-leg {
+  top: 140px;
+  left: 20px;
+  width: 40px;
+  height: 5px;
+  transform-origin: top right;
+  transform: rotate(45deg);
+}
+.right-leg {
+  top: 140px;
+  right: 20px;
+  width: 40px;
+  height: 5px;
+  transform-origin: top left;
+  transform: rotate(-45deg);
+}

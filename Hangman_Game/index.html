@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Hangman Game</h1>
+    <small>by <a href="https://github.com/Waptoon>@Waptoon</a></small><br />
+    <div id="wordToGuess"></div>
+    <div id="hangman">
+      <div class="body-part head"></div>
+      <div class="body-part body"></div>
+      <div class="body-part left-arm"></div>
+      <div class="body-part right-arm"></div>
+      <div class="body-part left-leg"></div>
+      <div class="body-part right-leg"></div>
+    </div>
+    <form id="guessForm">
+      <label for="letterInput">Guess a letter:</label>
+      <input type="text" id="letterInput" maxlength="1" required />
+      <button type="submit">Guess</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
