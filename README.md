@@ -1,6 +1,6 @@
 # HTML5 Simple Games
 
-Welcome to HTML5 Simple Games repository! This repository contains a collection of simple and fun games created using HTML5, CSS, and JavaScript by [mention:@Waptoon](https://github.com/Waptoon). Whether you're looking to pass the time or improve your skills, you'll find something enjoyable here.
+Welcome to HTML5 Simple Games repository! This repository contains a collection of simple and fun games created using HTML5, CSS, and JavaScript by @Waptoon . Whether you're looking to pass the time or improve your skills, you'll find something enjoyable here.
 
 ## Games Included
 
