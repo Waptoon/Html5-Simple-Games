@@ -8,19 +8,60 @@
   </head>
   <body>
     <h1>Hangman Game</h1>
-    <small>by <a href="https://github.com/Waptoon" target="_blank">@Waptoon</a></small><br />
-    <div id="wordToGuess"></div>
-    <div id="hangman">
-      <div class="body-part head"></div>
-      <div class="body-part body"></div>
-      <div class="body-part left-arm"></div>
-      <div class="body-part right-arm"></div>
-      <div class="body-part left-leg"></div>
-      <div class="body-part right-leg"></div>
+    <small
+      >by
+      <a href="https://github.com/Waptoon" target="_blank">@Waptoon</a></small
+    ><br />
+    <div id="hangman-container">
+      <svg id="hangman-svg" viewBox="0 0 400 400">
+        <!-- Gallows -->
+        <line
+          x1="50"
+          y1="350"
+          x2="350"
+          y2="350"
+          stroke="#000"
+          stroke-width="5"
+        />
+        <line
+          x1="150"
+          y1="350"
+          x2="150"
+          y2="50"
+          stroke="#000"
+          stroke-width="5"
+        />
+        <line
+          x1="150"
+          y1="50"
+          x2="250"
+          y2="50"
+          stroke="#000"
+          stroke-width="5"
+        />
+        <line
+          x1="250"
+          y1="50"
+          x2="250"
+          y2="100"
+          stroke="#000"
+          stroke-width="5"
+        />
+        <!-- Hangman body parts -->
+        <circle cx="250" cy="140" r="40" class="body-part head" />
+        <line x1="250" y1="180" x2="250" y2="280" class="body-part body" />
+        <line x1="250" y1="200" x2="210" y2="240" class="body-part left-arm" />
+        <line x1="250" y1="200" x2="290" y2="240" class="body-part right-arm" />
+        <line x1="250" y1="280" x2="210" y2="320" class="body-part left-leg" />
+        <line x1="250" y1="280" x2="290" y2="320" class="body-part right-leg" />
+      </svg>
     </div>
+    <div id="wordToGuess" class=""></div>
     <form id="guessForm">
       <label for="letterInput">Guess a letter:</label>
+      <br />
       <input type="text" id="letterInput" maxlength="1" required />
+      <br />
       <button type="submit">Guess</button>
     </form>
 
